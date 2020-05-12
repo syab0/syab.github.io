@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2016/11/11/14/49/minecraft-1816996_960_720.png">
+    <meta name="verification" content="49d36db1e2ea018b58a9f9b8679dca"/>
+    <title>#СЯб</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo" onclick="slowScroll('#top')">
+        <span>СЯб</span>
+      </div>
+      <div id="about">
+        <a href="#" onclick="slowScroll('#overview')" title="Информация"
+          >Информация</a
+        >
+        <a href="#" onclick="slowScroll('#developers')" title="Новости"
+          >Новости</a
+        >
+      </div>
+    </header>
+
+    <div id="top">
+      <h1>Мир СЯб</h1>
+      <h3>Тут рады всем!</h3>
+    </div>
+
+    <div id="main">
+      <div class="intro">
+        <h2></h2>
+        <span></span>
+      </div>
+      <div class="text">
+        <span></span>
+      </div>
+    </div>
+
+    <div id="overview">
+      <h2>Информация</h2>
+      <h4></h4>
+
+      <div class="img">
+        <a href="https://www.donationalerts.com/r/yakudzakirill"><img src="13.png"></a>
+        <span><a href="https://www.donationalerts.com/r/yakudzakirill">Покупка проходки</a></span>
+      </div>
+      <div class="img">
+        <a href="https://vk.com/mad_king0"><img src="41.png"></a>
+        <span><a href="https://vk.com/mad_king0">Поддержка</a></span>
+      </div>
+    </div>
+
+    <div id="developers">
+      <center><h5>Новости</h5></center>
+    
+    <div id="faq">
+      <div>
+        <span class="title">Открытие СЯб</span><br />
+        <span class="heading">14.03.20</span>
+        <p>
+        Мы так долго ждали и наконец:
+        <p>* Убрали защиту от читеров</p>
+        <P>* Добавили лаги</P>
+        <P>* Прогрузка чанков доходит до 70%</P>
+        Это шутка!
+        </p>
+        <span class="heading">        </span>
+        <p>
+          
+
+
+
+        </p>
+      </div>
+      <div>
+        <span class="title">Обход с пяткой</span><br />
+        <span class="heading">12.05.20</span>
+        <p>
+          Ждите свадьбу!
+        <p>* Поздравим молодоженов</p>
+        <P>* Плагины уже скоро</P>
+        </p>
+        <span class="heading">        </span>
+        <p>
+          
+
+
+
+        </p>
+      </div>
+      <div>
+        <span class="title">        </span><br />
+        <span class="heading">        </span>
+        <p>
+          
+
+
+
+        </p>
+        <span class="heading">        </span>
+        <p>
+
+
+
+
+        </p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      function slowScroll(id) {
+        $("html, body").animate(
+          {
+            scrollTop: $(id).offset().top
+          },
+          500
+        );
+      }
+
+      $(document).on("scroll", function() {
+        if ($(window).scrollTop() === 0) $("header").removeClass("fixed");
+        else $("header").attr("class", "fixed");
+      });
+    </script>
+  </body>
+</html>
